@@ -260,3 +260,48 @@ text-transform:uppercase;
 margin-bottom:20px;
 
 }
+.hero{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:120px;
+
+}
+
+.hero-content{
+
+width:50%;
+z-index:2;
+
+}
+
+.hero-image{
+
+width:45%;
+display:flex;
+justify-content:center;
+align-items:center;
+
+}
+
+.hero-image img{
+
+width:100%;
+max-width:520px;
+
+border-radius:20px;
+
+box-shadow:
+0 25px 70px rgba(0,0,0,.6);
+
+transition:.5s;
+
+}
+
+.hero-image img:hover{
+
+transform:scale(1.02);
+
+}
