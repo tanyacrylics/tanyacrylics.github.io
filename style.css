@@ -97,14 +97,15 @@ color:#D4AF37;
 height:100vh;
 
 background:
-
-linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.6)),
-
-url(images/hero.jpg);
+linear-gradient(
+rgba(0,0,0,.55),
+rgba(0,0,0,.60)
+),
+url("images/hero.jpg");
 
 background-size:cover;
-
 background-position:center;
+background-repeat:no-repeat;
 
 display:flex;
 
