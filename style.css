@@ -14,24 +14,32 @@ color:white;
 
 header{
 
-position:absolute;
+position:fixed;
 
 top:0;
 left:0;
+
 width:100%;
 
 display:flex;
-
 justify-content:space-between;
-
 align-items:center;
 
-padding:25px 60px;
+padding:18px 60px;
 
-z-index:100;
+background:rgba(0,0,0,0.35);
+
+backdrop-filter:blur(10px);
+
+-webkit-backdrop-filter:blur(10px);
+
+border-bottom:1px solid rgba(255,255,255,0.08);
+
+z-index:1000;
+
+transition:.3s;
 
 }
-
 .logo-area{
 
 display:flex;
