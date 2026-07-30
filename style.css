@@ -28,13 +28,13 @@ header{
 
 }
 
-.logo{
+.logo img{
 
-    font-size:34px;
+    height:55px;
 
-    font-weight:bold;
+    width:auto;
 
-    color:#C8A24A;
+    display:block;
 
 }
 
