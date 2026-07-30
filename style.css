@@ -1,125 +1,187 @@
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 body{
 
-    font-family:Arial,sans-serif;
-
-    color:#222;
-
-    background:white;
-
-    line-height:1.6;
+font-family:Poppins,sans-serif;
+background:#0f0f0f;
+color:white;
 
 }
 
 header{
 
-    display:flex;
+position:absolute;
 
-    justify-content:space-between;
+top:0;
+left:0;
+width:100%;
 
-    align-items:center;
+display:flex;
 
-    padding:35px 8%;
+justify-content:space-between;
+
+align-items:center;
+
+padding:25px 60px;
+
+z-index:100;
 
 }
 
-.logo img{
+.logo-area{
 
-    height:5px;
+display:flex;
+align-items:center;
+gap:15px;
 
-    width:auto;
+}
 
-    display:block;
+.logo{
+
+width:52px;
+height:52px;
+border-radius:8px;
+
+}
+
+.logo-area h2{
+
+font-family:"Cormorant Garamond",serif;
+
+font-size:32px;
+
+letter-spacing:2px;
+
+font-weight:600;
 
 }
 
 nav a{
 
-    text-decoration:none;
+text-decoration:none;
 
-    color:#222;
+color:white;
 
-    margin-left:45px;
+margin-left:40px;
 
-    font-size:16px;
-
-    letter-spacing:1px;
-
-    transition:0.3s;
+transition:.3s;
 
 }
 
 nav a:hover{
 
-    color:#C8A24A;
+color:#d4af37;
 
 }
 
 .hero{
 
-    text-align:center;
+height:100vh;
 
-    padding:120px 20px;
+background:
+
+linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.6)),
+
+url(images/hero.jpg);
+
+background-size:cover;
+
+background-position:center;
+
+display:flex;
+
+align-items:center;
+
+padding-left:120px;
+
+}
+
+.hero-content{
+
+max-width:550px;
 
 }
 
 .hero h1{
 
-    font-size:52px;
+font-family:"Cormorant Garamond",serif;
 
-    margin-bottom:20px;
+font-size:92px;
+
+line-height:0.9;
+
+letter-spacing:4px;
+
+margin-bottom:25px;
+
+}
+
+.hero h3{
+
+font-family:"Cormorant Garamond",serif;
+
+font-size:34px;
+
+color:#d4af37;
+
+margin-bottom:20px;
+
+font-style:italic;
 
 }
 
 .hero p{
 
-    color:#888;
+font-size:20px;
 
-    margin-bottom:30px;
+line-height:1.7;
 
-    letter-spacing:2px;
+color:#ddd;
 
-}
-
-.hero h2{
-
-    font-size:30px;
-
-    font-weight:normal;
-
-    max-width:700px;
-
-    margin:auto;
-
-    line-height:1.5;
+margin-bottom:45px;
 
 }
 
 .buttons{
 
-    margin-top:50px;
+display:flex;
+
+gap:25px;
 
 }
 
-.buttons a{
+.btn{
 
-    text-decoration:none;
+padding:15px 34px;
 
-    background:#111;
+border:1px solid #d4af37;
 
-    color:white;
+color:white;
 
-    padding:15px 35px;
+text-decoration:none;
 
-    margin:10px;
+transition:.3s;
 
-    display:inline-block;
+}
 
-    border-radius:40px;
+.gold{
+
+background:#d4af37;
+
+color:black;
+
+font-weight:600;
+
+}
+
+.btn:hover{
+
+background:#d4af37;
+
+color:black;
 
 }
