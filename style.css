@@ -70,11 +70,17 @@ font-weight:600;
 
 nav a{
 
-text-decoration:none;
-
 color:white;
 
-margin-left:40px;
+text-decoration:none;
+
+margin-left:35px;
+
+font-size:15px;
+
+letter-spacing:1px;
+
+text-transform:uppercase;
 
 transition:.3s;
 
@@ -82,7 +88,7 @@ transition:.3s;
 
 nav a:hover{
 
-color:#d4af37;
+color:#D4AF37;
 
 }
 
@@ -164,21 +170,25 @@ gap:25px;
 
 .btn{
 
-padding:15px 34px;
+padding:16px 34px;
 
-border:1px solid #d4af37;
+border:1px solid #D4AF37;
 
-color:white;
+border-radius:4px;
 
 text-decoration:none;
 
-transition:.3s;
+color:white;
+
+letter-spacing:1px;
+
+transition:.35s;
 
 }
 
 .gold{
 
-background:#d4af37;
+background:#D4AF37;
 
 color:black;
 
@@ -188,8 +198,12 @@ font-weight:600;
 
 .btn:hover{
 
-background:#d4af37;
+background:#D4AF37;
 
 color:black;
+
+transform:translateY(-3px);
+
+box-shadow:0 10px 30px rgba(212,175,55,.25);
 
 }
