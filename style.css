@@ -347,26 +347,19 @@ transform:scale(1.02);
     opacity:.45;
 
 }
-.gold-a{
 
-    color:#D4AF37;
-
-    font-style:italic;
-
-    font-size:1.08em;
-
-}
 .brand-title{
 
     font-family:"Cormorant Garamond",serif;
 
-    font-size:60px;
+    font-size:82px;
 
     line-height:.9;
 
-    letter-spacing:5px;
+    letter-spacing:3px;
 
-    margin-bottom:28px;
+    margin-bottom:25px;
+    white-space:nowrap;
 
 }
 .gold-a{
