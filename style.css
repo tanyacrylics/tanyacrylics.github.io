@@ -503,6 +503,60 @@ box-shadow:0 15px 35px rgba(212,175,55,.12);
     font-size:17px;
 
 }
+.instagram-profile{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    padding:12px 26px;
+
+    border-radius:50px;
+
+    background:#101010;
+
+    margin-bottom:35px;
+
+}
+
+.instagram-profile img{
+
+    width:28px;
+
+    height:28px;
+
+}
+
+.instagram-profile span{
+
+    font-size:20px;
+
+    color:#D4AF37;
+
+    letter-spacing:1px;
+
+}
+.instagram-box a{
+
+    color:#D4AF37;
+
+    text-decoration:none;
+
+    font-size:20px;
+
+    letter-spacing:1px;
+
+    transition:.3s;
+
+}
+
+.instagram-box a:hover{
+
+    letter-spacing:3px;
+
+}
 .art-info{
 
 padding:18px;
