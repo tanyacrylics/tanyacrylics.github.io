@@ -690,3 +690,40 @@ margin-top:50px;
     transform:scale(1.02);
 
 }
+.classes-section{
+
+    padding:120px 8%;
+
+    background:#111;
+
+}
+
+.classes-header{
+
+    text-align:center;
+
+    color:#D4AF37;
+
+    font-size:18px;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    margin-bottom:70px;
+
+    font-weight:500;
+
+}
+
+.classes{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:80px;
+
+}
