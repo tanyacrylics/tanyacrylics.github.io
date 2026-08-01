@@ -456,29 +456,51 @@ box-shadow:0 15px 35px rgba(212,175,55,.12);
 }
 
 
-.instagram-link{
+.instagram-box{
 
-text-align:center;
+    margin-top:90px;
 
-margin-top:60px;
+    padding:60px;
 
-}
+    text-align:center;
 
-.instagram-link a{
+    background:#151515;
 
-color:#D4AF37;
+    border-radius:18px;
 
-font-size:20px;
+    border:1px solid rgba(212,175,55,.18);
 
-text-decoration:none;
-
-transition:.3s;
+    transition:.35s;
 
 }
 
-.instagram-link a:hover{
+.instagram-box:hover{
 
-letter-spacing:2px;
+    border-color:#D4AF37;
+
+    box-shadow:0 0 35px rgba(212,175,55,.10);
+
+}
+
+.instagram-box h2{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:42px;
+
+    margin-bottom:18px;
+
+}
+
+.instagram-box p{
+
+    color:#cfcfcf;
+
+    line-height:1.8;
+
+    margin-bottom:28px;
+
+    font-size:17px;
 
 }
 .art-info{
