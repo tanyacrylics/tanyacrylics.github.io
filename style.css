@@ -325,7 +325,7 @@ transform:scale(1.02);
     white-space:nowrap;
 
 }
-.gold-a{
+.gold-a{d
 
     color:#D4AF37;
 
@@ -414,7 +414,10 @@ margin-top:50px;
 
     border-radius:14px;
 
-    transition:all .4s ease;
+    transition:
+transform .45s ease,
+opacity .35s ease,
+box-shadow .35s ease;
 
 }
 
@@ -437,11 +440,11 @@ box-shadow:0 15px 35px rgba(212,175,55,.12);
 
     top:50%;
 
-    transform:translate(-50%,-50%) scale(1.25);
+    transform:translate(-50%,-50%) scale(1.08);
 
-    width:115%;
+    width:108%;
 
-    height:430px;
+    height:380px;
 
     object-fit:contain;
 
@@ -449,9 +452,11 @@ box-shadow:0 15px 35px rgba(212,175,55,.12);
 
     padding:12px;
 
-    border-radius:14px;
+    border-radius:18px;
 
-    box-shadow:0 20px 50px rgba(0,0,0,.65);
+    box-shadow:
+        0 20px 45px rgba(0,0,0,.45),
+        0 0 20px rgba(212,175,55,.08);
 
 }
 
