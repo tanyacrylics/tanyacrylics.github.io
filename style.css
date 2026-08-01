@@ -396,7 +396,7 @@ margin-top:50px;
 
     border-radius:14px;
 
-    overflow:visible;
+    overflow:hidden;
 
     transition:.35s;
 
@@ -434,29 +434,7 @@ box-shadow:0 15px 35px rgba(212,175,55,.12);
 
 .art-card:hover img{
 
-    position:absolute;
-
-    left:50%;
-
-    top:50%;
-
-    transform:translate(-50%,-50%) scale(1.08);
-
-    width:108%;
-
-    height:380px;
-
-    object-fit:contain;
-
-    background:#111;
-
-    padding:12px;
-
-    border-radius:18px;
-
-    box-shadow:
-        0 20px 45px rgba(0,0,0,.45),
-        0 0 20px rgba(212,175,55,.08);
+    transform:scale(1.08);
 
 }
 
