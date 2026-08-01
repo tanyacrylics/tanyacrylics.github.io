@@ -257,7 +257,7 @@ font-weight:500;
 
     object-fit:contain;
 
-    opacity:.40;
+    opacity:.70;
 
     border-radius:20px;
 
@@ -307,7 +307,7 @@ transform:scale(1.02);
 
 .hero-image img:hover{
 
-    opacity:.85;
+    opacity:.90;
 
 }
 
