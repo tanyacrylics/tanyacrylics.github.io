@@ -523,9 +523,11 @@ box-shadow:0 15px 35px rgba(212,175,55,.12);
 
 .instagram-profile img{
 
-    width:28px;
+    width:10px;
 
-    height:28px;
+    height:10px;
+
+    object-fit:contain;
 
 }
 
