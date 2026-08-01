@@ -306,7 +306,7 @@ transform:scale(1.02);
     bottom:0;
 
     width:42%;
-    height:82%;
+    height:90%;
 
     display:flex;
     justify-content:flex-end;
@@ -323,7 +323,7 @@ transform:scale(1.02);
 
     object-fit:contain;
 
-    opacity:.22;
+    opacity:.40;
 
     filter:
         brightness(.68)
