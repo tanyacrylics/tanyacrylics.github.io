@@ -392,24 +392,22 @@ margin-top:50px;
 
     position:relative;
 
-    background:#f8f7f3;
+    background:#faf9f6;
 
-    padding:10px;
+    padding:6px;
 
-    border:2px solid #d8d6cf;
+    border:1px solid #d8d8d8;
 
-    border-radius:4px;
+    border-radius:3px;
 
-    overflow:visible;
+    overflow:hidden;
 
     box-shadow:
-        0 2px 4px rgba(255,255,255,.35) inset,
-        0 -2px 4px rgba(0,0,0,.08) inset,
-        0 10px 22px rgba(0,0,0,.28);
+        inset 0 0 0 2px #ffffff,
+        inset 0 0 0 3px #ececec,
+        0 8px 18px rgba(0,0,0,.22);
 
-    transition:
-        transform .45s ease,
-        box-shadow .45s ease;
+    transition:.45s;
 
 }
 
@@ -423,18 +421,21 @@ margin-top:50px;
 
     display:block;
 
-    transition:
-        transform .55s cubic-bezier(.22,.61,.36,1),
-        box-shadow .55s,
-        filter .55s;
+    border:1px solid #e6e6e6;
 
 }
 
 .art-card:hover{
 
-    transform:translateY(-12px);
+    transform:translateY(-8px);
 
-    z-index:100;
+    box-shadow:
+
+        inset 0 0 0 2px white,
+
+        inset 0 0 0 3px #ececec,
+
+        0 18px 35px rgba(0,0,0,.35);
 
 }
 
