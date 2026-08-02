@@ -648,30 +648,37 @@ margin-top:50px;
 
 .classes h2{
 
-    font-size:25px;
+    font-family:"Cormorant Garamond", serif;
+
+    font-size:28px;
+
+    font-weight:300;
 
     text-align:center;
 
-    margin-bottom:8px;
     text-transform:none;
+
+    margin-bottom:8px;
 
 }
 
 .classes h3{
 
-    text-align:center;
+    font-family:"Cormorant Garamond", serif;
 
-    color:#D4AF37;
+    font-size:20px;
 
-    font-size:22px;
+    font-weight:200;
 
     font-style:italic;
 
-    margin-bottom:10px;
-    text-transform:none;
+    color:#D4AF37;
+
+    text-align:center;
+
+    margin-bottom:35px;
 
 }
-
 .classes-text{
 
     color:#d6d6d6;
@@ -688,7 +695,7 @@ margin-top:50px;
 
     list-style:none;
 
-    margin-bottom:10px;
+    margin-bottom:40px;
 
 }
 .feature-icon{
