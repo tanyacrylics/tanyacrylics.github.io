@@ -182,7 +182,17 @@ color:black;
 font-weight:600;
 
 }
+.btn.gold{
 
+    padding:18px 42px;
+
+    border-radius:8px;
+
+    font-size:17px;
+
+    letter-spacing:.5px;
+
+}
 .btn:hover{
 
 background:#D4AF37;
@@ -575,7 +585,7 @@ margin-top:50px;
 
     display:flex;
 
-    align-items:center;
+    align-items:flex-start;
 
     justify-content:space-between;
 
@@ -591,31 +601,72 @@ margin-top:50px;
 
     flex:1;
 
+    max-width:620px;
+
+}
+
+.classes-right{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+}
+
+.classes-divider{
+
+    width:90px;
+
+    height:2px;
+
+    background:#D4AF37;
+
+    margin:0 auto 55px;
 }
 
 .classes-tag{
 
+    text-align:center;
+
     color:#D4AF37;
 
-    letter-spacing:3px;
+    font-size:18px;
 
-    font-size:60px;
+    letter-spacing:4px;
+
+    font-weight:500;
+
+    text-transform:none;
 
     margin-bottom:18px;
-
-    text-transform:uppercase;
 
 }
 
 .classes h2{
 
-    font-family:"Cormorant Garamond",serif;
+    font-size:48px;
 
-    font-size:44px;
+    text-align:center;
 
-    line-height:1.1;
+    margin-bottom:8px;
 
-    margin-bottom:10px;
+}
+
+.classes h3{
+
+    text-align:center;
+
+    color:#D4AF37;
+
+    font-size:28px;
+
+    font-style:italic;
+
+    margin-bottom:70px;
 
 }
 
@@ -638,22 +689,43 @@ margin-top:50px;
     margin-bottom:40px;
 
 }
+.feature-icon{
 
-.class-features li{
+    width:28px;
 
-    margin-bottom:16px;
+    height:28px;
 
-    font-size:18px;
+    display:inline-flex;
 
-    color:#efefef;
+    align-items:center;
+
+    justify-content:center;
+
+    margin-right:14px;
+
+    border-radius:50%;
+
+    background:#D4AF37;
+
+    color:#111;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    box-shadow:0 4px 12px rgba(212,175,55,.25);
 
 }
 
-.classes-right{
+.class-features li{
 
-    flex:1;
+    display:flex;
 
-    text-align:right;
+    align-items:center;
+
+    margin-bottom:22px;
+
+    font-size:18px;
 
 }
 
@@ -661,13 +733,11 @@ margin-top:50px;
 
     width:100%;
 
-    max-width:520px;
+    max-width:480px;
 
-    border-radius:16px;
+    border-radius:18px;
 
-    box-shadow:0 30px 70px rgba(0,0,0,.45);
-
-    transition:.5s;
+    box-shadow:0 25px 60px rgba(0,0,0,.45);
 
 }
 
