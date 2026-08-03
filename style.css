@@ -632,7 +632,7 @@ margin-top:50px;
 
     background:#D4AF37;
 
-    margin:0 auto 30px;
+    margin:25px 0 0 195px;
 }
 
 .classes-tag{
@@ -748,7 +748,10 @@ linear-gradient(
 
 .classes-header{
 
-    text-align:center;
+    
+    margin:0;
+
+    text-align:left;
 
     color:#D4AF37;
 
@@ -757,8 +760,6 @@ linear-gradient(
     letter-spacing:4px;
 
     text-transform:none;
-
-    margin-bottom:5px;
 
     font-weight:10;
 
@@ -787,19 +788,17 @@ linear-gradient(
 
     align-items:center;
 
-    justify-content:center;
-
     gap:35px;
 
 }
 
 .header-photo{
 
-    width:180px;
+    width:170px;
 
-    height:180px;
+    height:220px;
 
-    border-radius:24%;
+    border-radius:20%;
 
     object-fit:cover;
 
@@ -813,5 +812,12 @@ linear-gradient(
 
     text-align:left;
     max-width:600px;
+
+}
+.classes-header-wrapper{
+
+    max-width:950px;
+
+    margin:0 auto 50px;
 
 }
