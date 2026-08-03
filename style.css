@@ -795,17 +795,17 @@ linear-gradient(
 
 .header-photo{
 
-    width:90px;
+    width:95px;
 
-    height:90px;
+    height:95px;
 
-    border-radius:50%;
+    border-radius:18%;
 
     object-fit:cover;
 
-    border:3px solid #D4AF37;
+    border:2px solid rgba(212,175,55,.5);
 
-    box-shadow:0 8px 25px rgba(212,175,55,.20);
+    box-shadow:0 12px 30px rgba(0,0,0,.35);
 
 }
 
