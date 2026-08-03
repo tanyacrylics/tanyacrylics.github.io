@@ -836,3 +836,11 @@ linear-gradient(
     margin:0 auto 50px;
 
 }
+.join-box{
+    text-align:center;
+    margin-top:35px;
+}
+
+.join-box .btn{
+    display:inline-flex;
+}
