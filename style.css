@@ -583,13 +583,9 @@ margin-top:50px;
 
     display:flex;
 
-    align-items:center;
+    justify-content:center;
 
-    justify-content:space-between;
-
-    gap:35px;
-
-    padding:120px 8%;
+    padding:60px 8%;
 
     background:#111;
 
@@ -597,7 +593,8 @@ margin-top:50px;
 
 .classes-left{
 
-    flex:0 0 47%;
+    width:100%;
+    max-width:760px;
 
     background:#171717;
 
@@ -608,8 +605,11 @@ margin-top:50px;
     border:1px solid rgba(212,175,55,.12);
 
     box-shadow:
-    0 18px 45px rgba(0,0,0,.45);
+        0 18px 45px rgba(0,0,0,.45);
+
     transition:all .35s ease;
+
+    margin:0 auto;
 
 }
    .classes-left:hover{
@@ -731,21 +731,7 @@ margin-top:50px;
 
 }
 
-.classes-right img{
 
-    width:100%;
-
-    border-radius:16px;
-
-    display:block;
-
-}
-
-.classes-right img:hover{
-
-    transform:scale(1.02);
-
-}
 .classes-section{
 
     padding:60px 8% 90px;
