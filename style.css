@@ -781,3 +781,36 @@ linear-gradient(
     opacity:.9;
     
 }
+.header-top{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:25px;
+
+}
+
+.header-photo{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:3px solid #D4AF37;
+
+    box-shadow:0 8px 25px rgba(212,175,55,.20);
+
+}
+
+.header-text{
+
+    text-align:left;
+
+}
