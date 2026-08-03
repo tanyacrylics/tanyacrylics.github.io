@@ -473,10 +473,7 @@ margin-top:50px;
 
 
 .instagram-box{
-
-    margin-top:70px;
-
-     padding:38px 45px;
+    padding:38px 45px;
     max-width:1050px;
     margin:70px auto 0;
 
@@ -590,7 +587,7 @@ margin-top:50px;
 
     justify-content:space-between;
 
-    gap:80px;
+    gap:60px;
 
     padding:120px 8%;
 
@@ -602,7 +599,7 @@ margin-top:50px;
 
     flex:1;
 
-    max-width:560px;
+    max-width:600px;
 
 }
 
@@ -620,7 +617,7 @@ margin-top:50px;
 
 .classes-divider{
 
-    width:90px;
+    width:120px;
 
     height:2px;
 
@@ -653,7 +650,7 @@ margin-top:50px;
 
     font-size:28px;
 
-    font-weight:200;
+    font-weight:400;
 
     text-align:center;
 
@@ -669,7 +666,7 @@ margin-top:50px;
 
     font-size:20px;
 
-    font-weight:100;
+    font-weight:400;
 
     font-style:italic;
 
@@ -752,7 +749,7 @@ margin-top:50px;
 
     width:100%;
 
-    max-width:480px;
+    max-width:500px;
 
     border-radius:18px;
 
@@ -792,7 +789,7 @@ margin-top:50px;
 }
 .join-caption{
     color:#D4AF37;
-    font-size:24px;
+    font-size:26px;
     font-family:"Cormorant Garamond", serif;
     font-style:italic;
     margin:30px 0 14px;
@@ -801,8 +798,10 @@ margin-top:50px;
 .join-note{
     color:#d4af37;
     font-size:16px;
-    font-style:italic;
+    font-style:normal;
     margin-top:25px;
     margin-bottom:12px;
+    letter-spacing:.5px;
+    opacity:.9;
     
 }
