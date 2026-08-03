@@ -597,9 +597,13 @@ margin-top:50px;
 
 .classes-left{
 
-    flex:1;
+    background:#161616;
 
-    max-width:600px;
+    padding:40px;
+
+    border-radius:18px;
+
+    border:1px solid rgba(212,175,55,.12);
 
 }
 
