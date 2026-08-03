@@ -641,7 +641,7 @@ margin-top:50px;
     letter-spacing:1px;
     font-weight:500;
     color:#D4AF37;
-    margin-bottom:18px;
+    margin-bottom:10px;
     text-align:left;
 }
 
@@ -651,20 +651,20 @@ margin-top:50px;
     font-weight:500;
     color:#ffffff;
     line-height:1.15;
-    letter-spacing:0;
+    letter-spacing:1px;
     margin-bottom:12px;
     text-align:right;
 }
 
 .classes-header h3{
     font-family:"Cormorant Garamond", serif;
-    font-size:28px;
+    font-size:26px;
     font-weight:400;
     font-style:italic;
     color:#D4AF37;
     letter-spacing:.5px;
-    margin-bottom:28px;
-    text-align:left;
+    margin-bottom:12px;
+    text-align:right;
 }
 .classes-text{
 
