@@ -642,6 +642,7 @@ margin-top:50px;
     font-weight:500;
     color:#D4AF37;
     margin-bottom:24px;
+    text-align:left;
 }
 
 .classes-header h2{
@@ -652,6 +653,7 @@ margin-top:50px;
     line-height:1.15;
     letter-spacing:0;
     margin-bottom:12px;
+    text-align:left;
 }
 
 .classes-header h3{
@@ -662,6 +664,7 @@ margin-top:50px;
     color:#D4AF37;
     letter-spacing:.5px;
     margin-bottom:28px;
+    text-align:left;
 }
 .classes-text{
 
