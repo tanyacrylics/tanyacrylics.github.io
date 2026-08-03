@@ -632,7 +632,8 @@ margin-top:50px;
 
     background:#D4AF37;
 
-    margin:28px 0 0;
+     margin-left:auto;
+    margin-right:0;
 }
 
 .classes-tag{
@@ -652,7 +653,7 @@ margin-top:50px;
     color:#ffffff;
     line-height:1.15;
     letter-spacing:1px;
-    margin-bottom:12px;
+    margin-bottom:5px;
     text-align:right;
 }
 
