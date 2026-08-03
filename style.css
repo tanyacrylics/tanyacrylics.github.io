@@ -626,13 +626,13 @@ margin-top:50px;
 
 .classes-divider{
 
-    width:120px;
+    width:90px;
 
     height:2px;
 
     background:#D4AF37;
 
-    margin:25px 0 0 195px;
+    margin:28px 0 0;
 }
 
 .classes-tag{
@@ -787,8 +787,9 @@ linear-gradient(
     display:flex;
 
     align-items:center;
+    justify-content:center;
 
-    gap:35px;
+    gap:36px;
 
 }
 
@@ -811,7 +812,6 @@ linear-gradient(
 .header-text{
 
     text-align:left;
-    max-width:600px;
 
 }
 .classes-header-wrapper{
