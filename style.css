@@ -789,21 +789,21 @@ linear-gradient(
 
     justify-content:center;
 
-    gap:25px;
+    gap:35px;
 
 }
 
 .header-photo{
 
-    width:95px;
+    width:180px;
 
-    height:95px;
+    height:180px;
 
-    border-radius:18%;
+    border-radius:24%;
 
     object-fit:cover;
 
-    border:2px solid rgba(212,175,55,.5);
+    border:3px solid rgba(212,175,55,.5);
 
     box-shadow:0 12px 30px rgba(0,0,0,.35);
 
@@ -812,5 +812,6 @@ linear-gradient(
 .header-text{
 
     text-align:left;
+    max-width:600px;
 
 }
