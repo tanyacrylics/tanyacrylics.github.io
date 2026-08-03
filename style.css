@@ -647,13 +647,13 @@ margin-top:50px;
 
 .classes-header h2{
     font-family:"Cormorant Garamond", serif;
-    font-size:52px;
+    font-size:32px;
     font-weight:500;
     color:#ffffff;
     line-height:1.15;
     letter-spacing:0;
     margin-bottom:12px;
-    text-align:left;
+    text-align:right;
 }
 
 .classes-header h3{
