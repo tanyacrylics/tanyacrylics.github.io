@@ -792,26 +792,37 @@ linear-gradient(
     align-items:center;
     justify-content:center;
 
-    gap:36px;
+    gap:38px;
 
 }
 
 .header-photo{
 
-    width:170px;
+    width:150px;
 
-    height:220px;
+    height:150px;
 
-    border-radius:20%;
+    border-radius:50%;
 
     object-fit:cover;
 
-    border:3px solid rgba(212,175,55,.5);
+    border:3px solid #D4AF37;
 
-    box-shadow:0 12px 30px rgba(0,0,0,.35);
+    box-shadow: 0 12px 30px rgba(0,0,0,.45),
+        0 0 18px rgba(212,175,55,.18);
+
+    transition:.35s ease;
 
 }
+.header-photo:hover{
 
+    transform:scale(1.05);
+
+    box-shadow:
+        0 18px 40px rgba(0,0,0,.45),
+        0 0 28px rgba(212,175,55,.35);
+
+}
 .header-text{
 
     text-align:left;
