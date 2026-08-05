@@ -1,1 +1,71 @@
+.highlights{
 
+    max-width:1200px;
+
+    margin:80px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:22px;
+
+}
+
+.highlight-card{
+
+    background:#171717;
+
+    border:1px solid rgba(212,175,55,.12);
+
+    border-radius:18px;
+
+    padding:30px 20px;
+
+    text-align:center;
+
+    transition:.35s;
+
+}
+
+.highlight-card span{
+
+    font-size:34px;
+
+    display:block;
+
+    margin-bottom:18px;
+
+}
+
+.highlight-card h4{
+
+    font-family:"Cormorant Garamond", serif;
+
+    font-size:26px;
+
+    font-weight:600;
+
+    margin-bottom:10px;
+
+}
+
+.highlight-card p{
+
+    color:#cfcfcf;
+
+    font-size:15px;
+
+    line-height:1.5;
+
+}
+
+.highlight-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#D4AF37;
+
+    box-shadow:0 15px 35px rgba(212,175,55,.08);
+
+}
