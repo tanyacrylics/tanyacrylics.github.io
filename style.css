@@ -845,3 +845,55 @@ linear-gradient(
 .join-box .btn{
     display:inline-flex;
 }
+.join-section{
+
+    padding:120px 8%;
+
+    background:#0f0f0f;
+
+}
+
+.join-subtitle{
+
+    text-align:center;
+
+    color:#d6d6d6;
+
+    font-size:20px;
+
+    margin-top:-25px;
+
+    margin-bottom:70px;
+
+    font-style:italic;
+
+}
+
+.join-container{
+
+    display:flex;
+
+    gap:60px;
+
+    align-items:flex-start;
+
+}
+.join-left{
+
+    flex:1;
+
+}
+
+.batch-card{
+
+    background:#171717;
+
+    border:1px solid rgba(212,175,55,.15);
+
+    border-radius:20px;
+
+    padding:40px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.4);
+
+}
