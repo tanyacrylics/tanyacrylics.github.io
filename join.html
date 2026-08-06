@@ -158,20 +158,18 @@ Reserve My Seat
 <script>
 
 const reserveBtn = document.getElementById("reserveBtn");
-
 const reserveSection = document.getElementById("reserve");
 
-reserveBtn.addEventListener("click",function(){
+console.log(reserveBtn);
+console.log(reserveSection);
+
+reserveBtn.onclick = function(){
+
+    alert("Button Clicked");
 
     reserveSection.classList.remove("hidden");
 
-    reserveSection.scrollIntoView({
-
-        behavior:"smooth"
-
-    });
-
-});
+}
 
 </script>
   
