@@ -483,3 +483,36 @@ box-shadow:0 10px 30px rgba(212,175,55,.25);
     cursor:pointer;
 
 }
+/* Hide reserve section initially */
+
+.hidden{
+
+    display:none;
+
+}
+
+/* Animation */
+
+.reserve{
+
+    animation:slideDown .5s ease;
+
+}
+
+@keyframes slideDown{
+
+from{
+
+    opacity:0;
+    transform:translateY(-40px);
+
+}
+
+to{
+
+    opacity:1;
+    transform:translateY(0);
+
+}
+
+}
