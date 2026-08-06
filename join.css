@@ -401,7 +401,7 @@ box-shadow:0 10px 30px rgba(212,175,55,.25);
 
 }
 
-.reserve input:focus,{
+.reserve input:focus{
 
     outline:none;
 
