@@ -59,11 +59,11 @@ Small batches • Personal Guidance • Live Online
 
 </p>
 
-<a href="#reserve" class="btn gold">
+<button id="reserveBtn" class="btn gold">
 
 Reserve My Seat
 
-</a>
+</button>
 
 </section>
 
@@ -103,7 +103,7 @@ Reserve My Seat
 </section>
 
 
-  <section id="reserve" class="reserve">
+  <section id="reserve" class="reserve hidden">
 
     <div class="reserve-card">
 
@@ -153,6 +153,26 @@ Reserve My Seat
 
 </section>
 
+<script>
+
+const reserveBtn = document.getElementById("reserveBtn");
+
+const reserveSection = document.getElementById("reserve");
+
+reserveBtn.addEventListener("click",function(){
+
+    reserveSection.classList.remove("hidden");
+
+    reserveSection.scrollIntoView({
+
+        behavior:"smooth"
+
+    });
+
+});
+
+</script>
+  
 </body>
 
 </html>
