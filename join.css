@@ -40,7 +40,7 @@ backdrop-filter:blur(10px);
 border-bottom:1px solid rgba(255,255,255,.08);
 
 z-index:1000;
-
+transition:.3s;
 }
 
 .logo-area{
@@ -319,6 +319,7 @@ box-shadow:0 10px 30px rgba(212,175,55,.25);
     display:flex;
 
     justify-content:center;
+   animation:slideDown .5s ease;
 
 }
 
@@ -336,6 +337,7 @@ box-shadow:0 10px 30px rgba(212,175,55,.25);
     border:1px solid rgba(212,175,55,.12);
 
     box-shadow:0 18px 45px rgba(0,0,0,.45);
+   transition:.35s;
 
 }
 
@@ -389,7 +391,7 @@ box-shadow:0 10px 30px rgba(212,175,55,.25);
 
     border-radius:10px;
 
-    padding:18px;
+    padding:16px 18px;
 
     color:white;
 
@@ -399,12 +401,13 @@ box-shadow:0 10px 30px rgba(212,175,55,.25);
 
 }
 
-.reserve input:focus{
+.reserve input:focus,{
 
     outline:none;
 
     border-color:#D4AF37;
 
+    box-shadow:0 0 10px rgba(212,175,55,.15);
 }
 
 
@@ -467,9 +470,11 @@ box-shadow:0 10px 30px rgba(212,175,55,.25);
 
 .reserve textarea:focus{
 
-    outline:none;
+   outline:none;
 
     border-color:#D4AF37;
+
+    box-shadow:0 0 10px rgba(212,175,55,.15);
 
 }
 
@@ -478,9 +483,11 @@ box-shadow:0 10px 30px rgba(212,175,55,.25);
 
 .reserve button{
 
-    margin-top:20px;
+    margin-top:12px;
 
     cursor:pointer;
+
+    width:100%;
 
 }
 /* Hide reserve section initially */
@@ -492,12 +499,6 @@ box-shadow:0 10px 30px rgba(212,175,55,.25);
 }
 
 /* Animation */
-
-.reserve{
-
-    animation:slideDown .5s ease;
-
-}
 
 @keyframes slideDown{
 
