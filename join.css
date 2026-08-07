@@ -462,7 +462,7 @@ transform .55s cubic-bezier(.22,1,.36,1);
     resize:vertical;
 
     min-height:70px;
-   max-height:120px;
+   max-height:100px;
 
 }
 
@@ -519,46 +519,97 @@ to{
 
 }
 /* ==========================
-   Phone Input
+   PHONE INPUT
 ========================== */
 
-.iti{
-    width:100%;
+.iti {
+    width: 100%;
+    position: relative;
+    display: block;
 }
 
-.iti input{
-    width:100%;
-    height:54px;
-    background:#101010;
-    color:white;
-    border:1px solid rgba(255,255,255,.08);
-    border-radius:10px;
-    font-size:16px;
-    font-family:Poppins,sans-serif;
-    padding-left:105px !important;
-    box-sizing:border-box;
+.iti input {
+    width: 100%;
+    height: 54px;
+
+    padding-left: 82px !important;
+    padding-right: 18px;
+
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+
+    background: #101010;
+    color: white;
+
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 10px;
+
+    text-align: left;
 }
 
-.iti__flag-container{
-    display:flex;
-    align-items:center;
+.iti input:focus {
+    outline: none;
+    border-color: #D4AF37;
+    box-shadow: 0 0 10px rgba(212,175,55,.15);
 }
 
-.iti__selected-country{
-    height:54px;
-    display:flex;
-    align-items:center;
-    padding:0 12px;
-    border-right:1px solid rgba(255,255,255,.08);
+
+/* Country selector */
+
+.iti__country-container {
+    position: absolute !important;
+
+    top: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+
+    height: 100% !important;
+
+    display: flex !important;
+    align-items: center !important;
 }
 
-.iti__selected-dial-code{
-    margin-left:8px;
-    color:white;
+
+/* Flag + country code */
+
+.iti__selected-country {
+    height: 100% !important;
+
+    display: flex !important;
+    align-items: center !important;
+
+    padding: 0 10px !important;
+
+    background: transparent !important;
 }
 
-.iti__arrow{
-    margin-left:6px;
+
+/* Flag */
+
+.iti__flag {
+    margin: 0 !important;
+}
+
+
+/* +91 */
+
+.iti__selected-dial-code {
+    margin-left: 7px !important;
+
+    color: white !important;
+
+    font-size: 16px;
+    line-height: 1;
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* Dropdown arrow */
+
+.iti__arrow {
+    margin-left: 5px !important;
 }
 .reserve.show{
 
