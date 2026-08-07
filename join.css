@@ -620,3 +620,53 @@ to{
     transform:translateY(0);
 
 }
+/* ==========================
+   PHONE COUNTRY DROPDOWN
+========================== */
+
+.iti__country-list {
+    background: #171717 !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(212,175,55,.25);
+    box-shadow: 0 15px 35px rgba(0,0,0,.55);
+}
+
+/* Country names */
+.iti__country {
+    color: #ffffff !important;
+    background: #171717 !important;
+}
+
+/* Hovered country */
+.iti__country:hover,
+.iti__country.iti__highlight {
+    background: #2a2a2a !important;
+    color: #D4AF37 !important;
+}
+
+/* Country name */
+.iti__country-name {
+    color: #ffffff !important;
+}
+
+/* Country dialing code */
+.iti__dial-code {
+    color: #bdbdbd !important;
+}
+
+/* Search box, if enabled */
+.iti__search-input {
+    background: #101010 !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(255,255,255,.12) !important;
+}
+
+.iti__search-input::placeholder {
+    color: #8f8f8f !important;
+}
+
+/* Search box focus */
+.iti__search-input:focus {
+    outline: none !important;
+    border-color: #D4AF37 !important;
+}
