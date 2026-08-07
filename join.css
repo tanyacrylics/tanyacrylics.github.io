@@ -525,32 +525,32 @@ to{
 }
 
 }
-/* Phone Input */
-
-.iti{
-
-width:100%;
-
-}
-
-.iti input{
-
-width:100%;
-
-}
-.reserve.show{
-
-    max-height:1000px;
-
-    opacity:1;
-
-    transform:translateY(0);
-
-}
-/* -------- Phone input alignment -------- */
+/* ==========================
+   Phone Input
+========================== */
 
 .iti{
     width:100%;
+}
+
+.iti input{
+    width:100%;
+    height:56px;
+    padding-left:82px !important;
+    font-family:Poppins,sans-serif;
+    font-size:16px;
+   background:#101010;
+    color:white;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:10px;
+}
+
+.iti__selected-country{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:56px;
+    padding:0 12px;
 }
 
 .iti__country-container{
@@ -558,14 +558,12 @@ width:100%;
     align-items:center;
 }
 
-.iti__selected-country{
-    height:56px;
+.iti__flag-container{
     display:flex;
     align-items:center;
-    padding-left:12px;
 }
 
-.iti input{
-    height:56px;
-    padding-left:120px !important;
+.iti__selected-dial-code{
+    margin-left:8px;
+    color:#fff;
 }
