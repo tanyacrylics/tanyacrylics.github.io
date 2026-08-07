@@ -543,5 +543,12 @@ width:100%;
 display:none;
 
 }
+.reserve.show{
 
-/* Better spacing */
+    max-height:1000px;
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
