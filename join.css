@@ -209,6 +209,8 @@ color:#111;
 
 font-weight:600;
 
+border:none;
+
 }
 
 .btn:hover{
@@ -515,5 +517,34 @@ to{
     transform:translateY(0);
 
 }
+
+}
+/* Phone Input */
+
+.iti{
+
+width:100%;
+
+}
+
+.iti input{
+
+width:100%;
+
+}
+
+/* Hidden form */
+
+.hidden{
+
+display:none;
+
+}
+
+/* Better spacing */
+
+.reserve{
+
+margin-top:20px;
 
 }
