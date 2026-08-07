@@ -98,7 +98,7 @@ color:#D4AF37;
 
 .join-hero{
 
-height:100vh;
+min-height:72vh;
 
 display:flex;
 
@@ -324,6 +324,8 @@ box-shadow:0 10px 30px rgba(212,175,55,.25);
 
     transform:translateY(-20px);
 
+   margin-top:25px;
+
     transition:
 
         max-height .6s ease,
@@ -338,7 +340,7 @@ box-shadow:0 10px 30px rgba(212,175,55,.25);
 
     width:100%;
    max-width:650px;
-
+   margin:auto;
     padding:45px;
 
     background:#171717;
@@ -494,11 +496,14 @@ box-shadow:0 10px 30px rgba(212,175,55,.25);
 
 .reserve button{
 
-    margin-top:12px;
+margin-top:20px;
 
-    cursor:pointer;
+cursor:pointer;
 
-    width:100%;
+width:220px;
+
+align-self:center;
+
 
 }
 
@@ -533,14 +538,6 @@ width:100%;
 .iti input{
 
 width:100%;
-
-}
-
-/* Hidden form */
-
-.hidden{
-
-display:none;
 
 }
 .reserve.show{
