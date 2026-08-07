@@ -324,21 +324,21 @@ box-shadow:0 10px 30px rgba(212,175,55,.25);
 
     transform:translateY(-20px);
 
-   margin-top:25px;
+   margin-top:0;
 
 transition:
-max-height .8s cubic-bezier(.22,1,.36,1),
-opacity .55s ease,
-transform .55s cubic-bezier(.22,1,.36,1);
-
+max-height 1s cubic-bezier(.22,1,.36,1),
+opacity .6s ease,
+transform .8s cubic-bezier(.22,1,.36,1);
+margin-top .8s ease;
 }
 
 .reserve-card{
 
     width:100%;
    max-width:560px;
-   margin:auto;
-    padding:34px;
+   margin:0 auto;
+    padding:32px 34px;
 
     background:#171717;
 
@@ -451,11 +451,11 @@ transform .55s cubic-bezier(.22,1,.36,1);
 
     border-radius:10px;
 
-    padding:18px;
+    padding:14px 16px;
 
     color:white;
 
-    font-size:16px;
+    font-size:15px;
 
     font-family:Poppins,sans-serif;
 
@@ -613,11 +613,12 @@ to{
 }
 .reserve.show{
 
-    max-height:800px;
+    max-height:900px;
 
     opacity:1;
 
     transform:translateY(0);
+   margin-top: 25px;
 
 }
 /* ==========================
