@@ -394,21 +394,14 @@ transform .55s cubic-bezier(.22,1,.36,1);
 }
 
 .reserve input{
-
+    height:54px;
     background:#101010;
-
     border:1px solid rgba(255,255,255,.08);
-
     border-radius:10px;
-
-    padding:16px 18px;
-
+    padding:0 18px;
     color:white;
-
     font-size:16px;
-
     font-family:Poppins,sans-serif;
-
 }
 
 .reserve input:focus{
@@ -535,27 +528,15 @@ to{
 
 .iti input{
     width:100%;
-    height:56px;
-    padding-left:82px !important;
-    font-family:Poppins,sans-serif;
-    font-size:16px;
-   background:#101010;
+    height:54px;
+    background:#101010;
     color:white;
     border:1px solid rgba(255,255,255,.08);
     border-radius:10px;
-}
-
-.iti__selected-country{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    height:56px;
-    padding:0 12px;
-}
-
-.iti__country-container{
-    display:flex;
-    align-items:center;
+    font-size:16px;
+    font-family:Poppins,sans-serif;
+    padding-left:105px !important;
+    box-sizing:border-box;
 }
 
 .iti__flag-container{
@@ -563,9 +544,21 @@ to{
     align-items:center;
 }
 
+.iti__selected-country{
+    height:54px;
+    display:flex;
+    align-items:center;
+    padding:0 12px;
+    border-right:1px solid rgba(255,255,255,.08);
+}
+
 .iti__selected-dial-code{
     margin-left:8px;
-    color:#fff;
+    color:white;
+}
+
+.iti__arrow{
+    margin-left:6px;
 }
 .reserve.show{
 
