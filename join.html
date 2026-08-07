@@ -14,6 +14,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="join.css">
+    <link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.0/build/css/intlTelInput.css">
 
 </head>
 
@@ -76,10 +79,6 @@ Reserve My Seat
 
     <div class="reserve-card">
 
-        <p class="reserve-tag">
-            Reserve Your Seat
-        </p>
-
         <h2>
             Join the Next Batch
         </h2>
@@ -89,33 +88,41 @@ Reserve My Seat
             Complete the form below and continue to the payment page.
 
         </p>
-            <form>
+            <form id="bookingForm">
 
-    <input type="text"
-    placeholder="Full Name">
+<input
+type="text"
+placeholder="👤 Full Name"
+required>
 
-    <input type="text"
-    placeholder="WhatsApp Number">
+<input
+id="phone"
+type="tel"
+placeholder="WhatsApp Number">
 
-    <input type="text"
-    placeholder="Country">
+<label class="question-label">
 
-    <label class="question-label">
+💬 Questions or Comments
 
-        Do you have any questions or comments?
-        <span>(Optional)</span>
+<span>(Optional)</span>
 
-    </label>
+</label>
 
-    <textarea
-    placeholder="Share them with us!"
-    rows="5"></textarea>
+<textarea
 
-    <button class="btn gold">
+placeholder="Share them with us!"
 
-        Continue →
+rows="5">
 
-    </button>
+</textarea>
+
+<button
+type="submit"
+class="btn gold">
+
+Continue →
+
+</button>
 
 </form>
       </div>
@@ -124,19 +131,35 @@ Reserve My Seat
 
 <script>
 
-const reserveBtn = document.getElementById("reserveBtn");
-const reserveSection = document.getElementById("reserve");
+const reserveBtn=document.getElementById("reserveBtn");
 
-console.log(reserveBtn);
-console.log(reserveSection);
+const reserve=document.getElementById("reserve");
 
-reserveBtn.onclick = function(){
+reserveBtn.onclick=function(){
 
-    alert("Button Clicked");
+reserve.classList.remove("hidden");
 
-    reserveSection.classList.remove("hidden");
+reserve.scrollIntoView({
 
-}
+behavior:"smooth",
+
+block:"start"
+
+});
+
+};
+
+const phoneInput=document.querySelector("#phone");
+
+intlTelInput(phoneInput,{
+
+initialCountry:"in",
+
+preferredCountries:["in","us","gb","ca","au"],
+
+separateDialCode:true
+
+});
 
 </script>
 
@@ -175,7 +198,7 @@ reserveBtn.onclick = function(){
     </div>
 
 </section>
-
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.0/build/js/intlTelInput.min.js"></script>
 </body>
 
 </html>
