@@ -607,6 +607,8 @@ to{
     font-size: 16px !important;
 
     line-height: normal !important;
+    position: relative;
+    top: -3px;
 }
 
 
