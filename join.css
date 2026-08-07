@@ -316,25 +316,34 @@ box-shadow:0 10px 30px rgba(212,175,55,.25);
 
 .reserve{
 
-    padding:120px 40px;
+    max-height:0;
 
-    display:flex;
+    overflow:hidden;
 
-    justify-content:center;
-   animation:slideDown .5s ease;
+    opacity:0;
+
+    transform:translateY(-20px);
+
+    transition:
+
+        max-height .6s ease,
+
+        opacity .45s ease,
+
+        transform .45s ease;
 
 }
 
 .reserve-card{
 
     width:100%;
-    max-width:760px;
+   max-width:650px;
+
+    padding:45px;
 
     background:#171717;
 
     border-radius:22px;
-
-    padding:60px;
 
     border:1px solid rgba(212,175,55,.12);
 
@@ -381,7 +390,7 @@ box-shadow:0 10px 30px rgba(212,175,55,.25);
 
     flex-direction:column;
 
-    gap:22px;
+    gap:16px;
 
 }
 
@@ -460,7 +469,7 @@ box-shadow:0 10px 30px rgba(212,175,55,.25);
 
     resize:vertical;
 
-    min-height:140px;
+    min-height:90px;
 
 }
 
@@ -492,13 +501,7 @@ box-shadow:0 10px 30px rgba(212,175,55,.25);
     width:100%;
 
 }
-/* Hide reserve section initially */
 
-.hidden{
-
-    display:none;
-
-}
 
 /* Animation */
 
@@ -542,9 +545,3 @@ display:none;
 }
 
 /* Better spacing */
-
-.reserve{
-
-margin-top:20px;
-
-}
