@@ -568,7 +568,7 @@ to{
 
     display: flex !important;
     align-items: center !important;
-   transform: translateY(-3px);
+   transform: translateY(-1px);
 }
 
 
