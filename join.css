@@ -456,11 +456,11 @@ transform .7s cubic-bezier(.22,1,.36,1);
 
 /* Button */
 
-.reserve button{
-margin-top:12px;
-cursor:pointer;
-width:180px;
-align-self:center;
+.reserve form > button{
+    margin-top:20px;
+    cursor:pointer;
+    width:180px;
+    align-self:center;
 }
 
 .reserve.show{
@@ -508,12 +508,12 @@ align-self:center;
     height: 54px !important;
     display: flex !important;
     align-items: center !important;
-    line-height: 1 !important;
+    
 }
 .iti__selected-country-primary {
     display: flex !important;
     align-items: center !important;
-    line-height: 54px !important;
+  
 }
 .iti__country-list {
     background: #171717 !important;
