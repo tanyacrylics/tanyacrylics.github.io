@@ -65,10 +65,6 @@ Small batches • Personal Guidance • Live Online
 </button>
 
 </section>
-
-
-  
-
   <section id="reserve" class="reserve">
 
     <div class="reserve-card">
@@ -128,22 +124,26 @@ Continue →
 
     <script>
 
-const reserveBtn=document.getElementById("reserveBtn");
-const reserve=document.getElementById("reserve");
+const reserveBtn = document.getElementById("reserveBtn");
+const reserve = document.getElementById("reserve");
 
-reserveBtn.onclick=function(){
+reserveBtn.onclick = function () {
 
-reserve.classList.add("show");
-    reserve.scrollIntoView({
-        behavior:"smooth",
-        block:"start"
+    reserve.classList.add("show");
 
-});
+    setTimeout(function () {
 
-}, 100);
-     });
+        reserve.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
 
-const phoneInput=document.querySelector("#phone");
+    }, 100);
+
+};
+
+
+const phoneInput = document.querySelector("#phone");
 
 const iti = intlTelInput(phoneInput, {
     initialCountry: "in",
