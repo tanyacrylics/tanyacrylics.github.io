@@ -542,3 +542,8 @@ transform .7s cubic-bezier(.22,1,.36,1);
 .iti__dial-code {
     color: #bdbdbd !important;
 }
+
+
+.payment-section {
+    display: none;
+}
