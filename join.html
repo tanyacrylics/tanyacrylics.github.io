@@ -127,21 +127,18 @@ Continue →
 
     
 <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.0/build/js/intlTelInput.min.js"></script>
-<script>
+
+    <script>
 
 const reserveBtn=document.getElementById("reserveBtn");
-
 const reserve=document.getElementById("reserve");
 
 reserveBtn.onclick=function(){
 
 reserve.classList.add("show");
-
-reserve.scrollIntoView({
-
-behavior:"smooth",
-
-block:"start"
+    reserve.scrollIntoView({
+        behavior:"smooth",
+        block:"start"
 
 });
 
