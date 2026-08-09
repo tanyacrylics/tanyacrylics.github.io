@@ -498,6 +498,16 @@ align-self:center;
 
 }
 
+.reserve.show{
+
+    max-height:900px;
+
+    opacity:1;
+
+    transform:translateY(0);
+   margin-top: 25px;
+
+}
 
 /* Animation */
 
@@ -514,170 +524,38 @@ to{
 
     opacity:1;
     transform:translateY(0);
-
+}
 }
 
-}
 /* ==========================
-   PHONE INPUT
-========================== */
+   PHONE INPUT — CLEAN VERSION
+   ========================== */
 
 .iti {
     width: 100%;
 }
 
-/* Main input */
+/* Keep the phone input identical to other inputs */
 .iti input {
     width: 100%;
     height: 54px !important;
-
     padding-left: 95px !important;
     padding-right: 18px !important;
-line-height: normal !important;
-    font-family: Poppins, sans-serif;
-    font-size: 16px;
+    line-height: normal !important;
 
-    background: #101010;
-    color: white;
-
-    border: 1px solid rgba(255,255,255,.08);
-    border-radius: 10px;
-}
-
-/* Placeholder */
-.iti input::placeholder {
-    color: #8f8f8f;
-    opacity: 1;
-}
-
-
-/* ==========================
-   COUNTRY SELECTOR
-========================== */
-/*
-.iti__country-container {
-    position: absolute !important;
-
-    left: 0 !important;
-    top: 0 !important;
-
-    height: 54px !important;
-
-    display: flex !important;
-    align-items: center !important;
-   
-}
-
-
-/* Flag + dial code */
-.iti__selected-country {
-    height: 54px !important;
-
-    display: flex !important;
-    align-items: center !important;
-
-    padding: 0 10px !important;
-
-    background: transparent !important;
-
-}
-
-
-/* Flag */
-.iti__flag {
-    margin: 0 !important;
-}
-
-
-/* +91 */
-.iti__selected-dial-code {
-    display: inline-flex !important;
-
-    align-items: center !important;
-
-    margin-left: 7px !important;
-
+    background: #101010 !important;
     color: white !important;
 
-    font-size: 16px !important;
+    border: 1px solid rgba(255,255,255,.08) !important;
+    border-radius: 10px !important;
 
-    line-height: 1 !important;
- 
-   
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
 }
-
-
-/* Arrow */
-.iti__arrow {
-    margin-left: 5px !important;
-}
-*/
 
 /* Focus */
 .iti input:focus {
     outline: none;
-
-    border-color: #D4AF37;
-
-    box-shadow: 0 0 10px rgba(212,175,55,.15);
-}
-.reserve.show{
-
-    max-height:900px;
-
-    opacity:1;
-
-    transform:translateY(0);
-   margin-top: 25px;
-
-}
-/* ==========================
-   PHONE COUNTRY DROPDOWN
-========================== */
-
-.iti__country-list {
-    background: #171717 !important;
-    color: #ffffff !important;
-    border: 1px solid rgba(212,175,55,.25);
-    box-shadow: 0 15px 35px rgba(0,0,0,.55);
-}
-
-/* Country names */
-.iti__country {
-    color: #ffffff !important;
-    background: #171717 !important;
-}
-
-/* Hovered country */
-.iti__country:hover,
-.iti__country.iti__highlight {
-    background: #2a2a2a !important;
-    color: #D4AF37 !important;
-}
-
-/* Country name */
-.iti__country-name {
-    color: #ffffff !important;
-}
-
-/* Country dialing code */
-.iti__dial-code {
-    color: #bdbdbd !important;
-}
-
-/* Search box, if enabled */
-.iti__search-input {
-    background: #101010 !important;
-    color: #ffffff !important;
-    border: 1px solid rgba(255,255,255,.12) !important;
-}
-
-.iti__search-input::placeholder {
-    color: #8f8f8f !important;
-}
-
-/* Search box focus */
-.iti__search-input:focus {
-    outline: none !important;
     border-color: #D4AF37 !important;
+    box-shadow: 0 0 10px rgba(212,175,55,.15);
 }
