@@ -262,7 +262,7 @@ bookingForm.addEventListener("submit", function (event) {
 
     const country = iti.getSelectedCountryData().iso2;
 
-    paymentSection.style.display = "block";
+    paymentSection.classList.add("show");
 
     if (country === "in") {
         indiaPayment.style.display = "block";
