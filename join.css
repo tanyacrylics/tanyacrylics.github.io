@@ -485,13 +485,10 @@ align-self:center;
     padding-left: 95px !important;
     padding-right: 18px !important;
     line-height: normal !important;
-
     background: #101010 !important;
     color: white !important;
-
     border: 1px solid rgba(255,255,255,.08) !important;
     border-radius: 10px !important;
-
     font-family: Poppins, sans-serif;
     font-size: 16px;
 }
@@ -502,8 +499,20 @@ align-self:center;
     border-color: #D4AF37 !important;
     box-shadow: 0 0 10px rgba(212,175,55,.15);
 }
-
-
+.iti__country-container {
+    height: 54px !important;
+    display: flex !important;
+    align-items: center !important;
+}
+.iti__selected-country {
+    height: 54px !important;
+    display: flex !important;
+    align-items: center !important;
+}
+.iti__selected-country-primary {
+    display: flex !important;
+    align-items: center !important;
+}
 .iti__country-list {
     background: #171717 !important;
     color: #ffffff !important;
