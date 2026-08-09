@@ -545,5 +545,19 @@ transform .7s cubic-bezier(.22,1,.36,1);
 
 
 .payment-section {
-    display: none;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-35px);
+
+    transition:
+        max-height 1s cubic-bezier(.22,1,.36,1),
+        opacity .6s ease,
+        transform .8s cubic-bezier(.22,1,.36,1);
 }
+.payment-section.show {
+    max-height: 1200px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
