@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #0f0f0f;
+    color: white;
+}
+
+
+/* ================= CONTACT HERO ================= */
+
+.contact-hero {
+    max-width: 850px;
+
+    min-height: 55vh;
+
+    margin: 0 auto;
+
+    padding: 150px 30px 60px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.contact-tag {
+    color: #D4AF37;
+
+    font-size: 15px;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+}
+
+.contact-hero h1 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 72px;
+
+    font-weight: 600;
+
+    line-height: 1.05;
+
+    margin-bottom: 25px;
+}
+
+.contact-intro {
+    max-width: 650px;
+
+    color: #cfcfcf;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+
+/* ================= CONTACT OPTIONS ================= */
+
+.contact-options {
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    padding: 20px 30px 110px;
+}
+
+.contact-links {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+/* ================= CONTACT LINK ================= */
+
+.contact-links a {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 30px;
+
+    padding: 25px 5px;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-bottom: 1px solid rgba(212, 175, 55, .18);
+
+    transition:
+        color .3s ease,
+        padding-left .3s ease,
+        border-color .3s ease;
+}
+
+.contact-links a:first-child {
+    border-top: 1px solid rgba(212, 175, 55, .18);
+}
+
+.contact-links a:hover {
+    color: #D4AF37;
+
+    padding-left: 12px;
+
+    border-color: rgba(212, 175, 55, .5);
+}
+
+.contact-links span {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 30px;
+
+    font-weight: 500;
+}
+
+.contact-links small {
+    color: #999;
+
+    font-size: 14px;
+
+    letter-spacing: .5px;
+
+    text-align: right;
+}
+
+
+/* ================= WHATSAPP FLOAT ================= */
+
+.whatsapp-float {
+    position: fixed;
+
+    right: 25px;
+
+    bottom: 25px;
+
+    width: 58px;
+
+    height: 58px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #25D366;
+
+    color: white;
+
+    border-radius: 50%;
+
+    text-decoration: none;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .4);
+
+    z-index: 2000;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: translateY(-4px) scale(1.05);
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .5);
+}
+
+.whatsapp-icon {
+    width: 31px;
+
+    height: 31px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+.whatsapp-icon svg {
+    width: 100%;
+
+    height: 100%;
+
+    fill: currentColor;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 700px) {
+
+    .contact-hero {
+        min-height: 48vh;
+
+        padding: 130px 22px 50px;
+    }
+
+    .contact-tag {
+        font-size: 12px;
+
+        letter-spacing: 3px;
+    }
+
+    .contact-hero h1 {
+        font-size: 52px;
+    }
+
+    .contact-intro {
+        font-size: 15px;
+
+        line-height: 1.8;
+    }
+
+    .contact-options {
+        padding: 10px 22px 80px;
+    }
+
+    .contact-links a {
+        padding: 22px 2px;
+
+        gap: 15px;
+    }
+
+    .contact-links span {
+        font-size: 25px;
+    }
+
+    .contact-links small {
+        font-size: 12px;
+    }
+
+    .whatsapp-float {
+        width: 52px;
+
+        height: 52px;
+
+        right: 18px;
+
+        bottom: 18px;
+    }
+
+    .whatsapp-icon {
+        width: 28px;
+
+        height: 28px;
+    }
+}
