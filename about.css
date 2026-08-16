@@ -369,7 +369,22 @@ nav a:hover {
     font-size: 42px;
     margin-bottom: 35px;
 }
+.mediums-list {
+    max-width: 850px;
+    margin: 0 auto;
 
+    color: #cfcfcf;
+
+    font-size: 18px;
+    line-height: 2;
+
+    text-align: center;
+}
+
+.mediums-list span {
+    color: #D4AF37;
+    margin: 0 8px;
+}
 
 
 
