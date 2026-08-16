@@ -9,7 +9,68 @@ body {
     background: #0f0f0f;
     color: white;
 }
+/* ================= HEADER ================= */
 
+header {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 18px 60px;
+
+    background: rgba(0, 0, 0, 0.35);
+
+    backdrop-filter: blur(10px);
+
+    z-index: 1000;
+}
+
+.logo-area {
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+}
+
+.logo {
+    width: 42px;
+    height: 42px;
+
+    object-fit: contain;
+}
+
+.logo-area h2 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 28px;
+
+    font-weight: 600;
+
+    color: white;
+}
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: color .3s ease;
+}
+
+nav a:hover {
+    color: #D4AF37;
+}
 
 /* ================= CONTACT HERO ================= */
 
@@ -260,4 +321,24 @@ body {
 
         height: 28px;
     }
+    header {
+    padding: 15px 20px;
+}
+
+.logo-area {
+    gap: 10px;
+}
+
+.logo {
+    width: 36px;
+    height: 36px;
+}
+
+.logo-area h2 {
+    font-size: 24px;
+}
+
+nav a {
+    font-size: 13px;
+}
 }
