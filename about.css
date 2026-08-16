@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    background: #0f0f0f;
+    color: white;
+}
+
+/* ================= HEADER ================= */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 60px;
+
+    background: rgba(0,0,0,.35);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid rgba(255,255,255,.08);
+
+    z-index: 1000;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 42px;
+    height: 42px;
+    border-radius: 8px;
+}
+
+.logo-area h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #D4AF37;
+}
+
+/* ================= ABOUT HERO ================= */
+
+.about-hero {
+    max-width: 850px;
+
+    min-height: 70vh;
+
+    margin: auto;
+
+    padding: 150px 30px 70px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.about-tag {
+    color: #D4AF37;
+
+    font-size: 15px;
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+}
+
+.about-hero h1 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 72px;
+    font-weight: 600;
+
+    line-height: 1.05;
+
+    margin-bottom: 30px;
+}
+
+.about-intro {
+    max-width: 720px;
+
+    color: #d6d6d6;
+
+    font-size: 19px;
+    line-height: 1.9;
+}
