@@ -411,28 +411,6 @@ nav a {
         font-size: 16px;
         line-height: 2;
     }
-
-}    
-
-    /* ABOUT HERO */
-
-    .about-hero {
-        min-height: 42vh;
-
-        padding: 130px 25px 50px;
-    }
-
-    .about-tag {
-        font-size: 12px;
-
-        letter-spacing: 3px;
-    }
-
-    .about-hero h1 {
-        font-size: 52px;
-    }
-
-
     /* JOURNEY */
 
     .journey {
@@ -482,7 +460,6 @@ nav a {
 
         padding-bottom: 22px;
     }
-
 
 
     /* WHATSAPP */
