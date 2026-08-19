@@ -139,7 +139,6 @@ nav a:hover {
 
 .contact-links {
     display: flex;
-
     flex-direction: column;
 }
 
@@ -148,16 +147,13 @@ nav a:hover {
 
 .contact-links a {
     display: flex;
-
-    justify-content: space-between;
     align-items: center;
 
-    gap: 30px;
+    gap: 22px;
 
-    padding: 25px 5px;
+    padding: 24px 8px;
 
     color: white;
-
     text-decoration: none;
 
     border-bottom: 1px solid rgba(212, 175, 55, .18);
@@ -175,11 +171,10 @@ nav a:hover {
 .contact-links a:hover {
     color: #D4AF37;
 
-    padding-left: 12px;
+    padding-left: 16px;
 
     border-color: rgba(212, 175, 55, .5);
 }
-
 .contact-links span {
     font-family: "Cormorant Garamond", serif;
 
@@ -197,8 +192,61 @@ nav a:hover {
 
     text-align: right;
 }
+/* ================= CONTACT ICON ================= */
+
+.contact-icon {
+    width: 42px;
+    height: 42px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #D4AF37;
+}
+
+.contact-icon svg {
+    width: 27px;
+    height: 27px;
+
+    fill: currentColor;
+
+    stroke: currentColor;
+
+    stroke-width: 1.4;
+    transition: transform .3s ease;
+}
+
+.contact-links a:hover .contact-icon svg {
+    transform: scale(1.1);
+}
 
 
+/* ================= CONTACT TEXT ================= */
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+.contact-info span {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 30px;
+
+    font-weight: 500;
+}
+.contact-info small {
+    color: #999;
+
+    font-size: 14px;
+
+    letter-spacing: .5px;
+}
 /* ================= WHATSAPP FLOAT ================= */
 
 .whatsapp-float {
@@ -293,11 +341,27 @@ nav a:hover {
     }
 
     .contact-links a {
-        padding: 22px 2px;
+        padding: 20px 2px;
 
-        gap: 15px;
+        gap: 16px;
     }
+.contact-icon {
+    width: 36px;
+    height: 36px;
+}
 
+.contact-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.contact-info span {
+    font-size: 25px;
+}
+.contact-info small {
+    font-size: 12px;
+}
+    
     .contact-links span {
         font-size: 25px;
     }
