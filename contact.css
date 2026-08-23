@@ -445,3 +445,32 @@ nav a {
     font-size: 13px;
 }
 }
+/* ================= MOBILE GAP FIX ================= */
+
+@media (max-width: 700px) {
+
+    header {
+        position: relative !important;
+        height: auto !important;
+    }
+
+    .contact-hero {
+        min-height: auto !important;
+
+        height: auto !important;
+
+        padding: 35px 22px 45px !important;
+
+        margin: 0 !important;
+
+        justify-content: flex-start !important;
+    }
+
+    .contact-tag {
+        margin-top: 0 !important;
+    }
+
+    .contact-hero h1 {
+        margin-top: 0 !important;
+    }
+}
