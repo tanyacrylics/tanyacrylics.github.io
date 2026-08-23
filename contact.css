@@ -77,7 +77,7 @@ nav a:hover {
 .contact-hero {
     max-width: 850px;
 
-    min-height: 55vh;
+    min-height: auto;
 
     margin: 0 auto;
 
