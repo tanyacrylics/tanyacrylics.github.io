@@ -1035,7 +1035,7 @@ linear-gradient(
     }
 
     .gallery h2 {
-        font-size: 28px;
+        font-size: 32px;
 
         margin-bottom: 35px;
 
@@ -1100,18 +1100,18 @@ linear-gradient(
     }
 
     .classes-tag {
-        font-size: 14px !important;
+        font-size: 26px !important;
         margin-bottom: 10px !important;
     }
 
     .header-text h2 {
-        font-size: 26px !important; /* Keeps "Let the canvas speak" readable without breaking lines boxily */
+        font-size: 22px !important; /* Keeps "Let the canvas speak" readable without breaking lines boxily */
         line-height: 1.2 !important;
         margin-bottom: 8px !important;
     }
 
     .header-text h3 {
-        font-size: 16px !important;
+        font-size: 20px !important;
         line-height: 1.4 !important;
     }
 
