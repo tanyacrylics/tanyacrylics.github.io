@@ -890,3 +890,202 @@ linear-gradient(
     height: 100%;
     fill: currentColor;
 }
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 700px) {
+
+    /* HEADER */
+
+    header {
+        padding: 15px 20px;
+    }
+
+    .logo-area {
+        gap: 10px;
+    }
+
+    .logo {
+        width: 36px;
+        height: 36px;
+    }
+
+    .logo-area h2 {
+        font-size: 24px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+
+    /* ================= HERO ================= */
+
+    .hero {
+        min-height: auto;
+
+        padding: 130px 22px 70px;
+
+        display: flex;
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+
+    /* HERO LEFT */
+
+    .hero-left {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+
+    /* BRAND TITLE */
+
+    .brand-title {
+        font-size: 52px;
+
+        line-height: 1.05;
+
+        text-align: center;
+    }
+
+
+    .gold-a {
+        font-size: inherit;
+    }
+
+
+    /* HERO TAGLINE */
+
+    .hero-left p {
+        font-size: 15px;
+
+        line-height: 1.7;
+
+        text-align: center;
+
+        max-width: 330px;
+    }
+
+
+    /* HERO IMAGE */
+
+    .hero-image {
+        width: 100%;
+
+        margin-top: 45px;
+
+        display: flex;
+
+        justify-content: center;
+    }
+
+    .hero-image img {
+        width: 100%;
+
+        max-width: 340px;
+
+        height: auto;
+
+        object-fit: cover;
+    }
+
+
+    /* BUTTONS */
+
+    .buttons {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 14px;
+
+        margin-top: 30px;
+    }
+
+    .buttons a {
+        width: 100%;
+
+        max-width: 280px;
+
+        text-align: center;
+    }
+
+
+    /* SCROLL INDICATOR */
+
+    .scroll-indicator {
+        margin-top: 45px;
+
+        font-size: 12px;
+    }
+
+
+    /* ================= GALLERY ================= */
+
+    .gallery {
+        padding: 70px 22px 80px;
+    }
+
+    .gallery h2 {
+        font-size: 42px;
+
+        margin-bottom: 35px;
+
+        text-align: center;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+
+        gap: 22px;
+    }
+
+
+    /* GALLERY CARD */
+
+    .art-card {
+        width: 100%;
+    }
+
+    .art-card img {
+        width: 100%;
+
+        height: auto;
+
+        display: block;
+    }
+
+
+    /* ================= WHATSAPP ================= */
+
+    .whatsapp-float {
+        width: 52px;
+
+        height: 52px;
+
+        right: 18px;
+
+        bottom: 18px;
+    }
+
+    .whatsapp-icon {
+        width: 28px;
+
+        height: 28px;
+    }
+
+}
