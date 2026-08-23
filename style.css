@@ -1035,7 +1035,7 @@ linear-gradient(
     }
 
     .gallery h2 {
-        font-size: 42px;
+        font-size: 28px;
 
         margin-bottom: 35px;
 
@@ -1061,6 +1061,63 @@ linear-gradient(
         height: auto;
 
         display: block;
+    }
+    /* ================= CLASSES SECTION ================= */
+    .classes {
+        padding: 60px 20px !important;
+    }
+
+    .classes h2 {
+        font-size: 28px !important; /* Matches gallery header scaling */
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    /* Converts horizontal course tracks into a responsive vertical list */
+    .classes-container {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 25px !important;
+        width: 100%;
+    }
+
+    /* Single Course Card Customizations */
+    .class-card {
+        width: 100% !important;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 20px !important;
+    }
+
+
+    /* ================= INSTAGRAM BOX ================= */
+    .instagram-section {
+        padding: 50px 20px !important;
+    }
+
+    .instagram-section h2 {
+        font-size: 28px !important;
+        margin-bottom: 25px;
+    }
+
+    /* Overrides desktop wrappers so embeds scale properly on smaller touchscreens */
+    .instagram-box {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center;
+        overflow: hidden; /* Prevents container-breaking embed script margins */
+    }
+
+    /* Forces direct iframe widgets or image cards to stay fluidly within smartphone screen margins */
+    .instagram-box iframe, 
+    .instagram-box blockquote,
+    .instagram-box img {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box;
     }
 
 
