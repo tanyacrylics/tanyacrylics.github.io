@@ -920,6 +920,7 @@ linear-gradient(
 
     nav a {
         font-size: 13px;
+        margin-left: 15px;
     }
 
 
@@ -928,7 +929,7 @@ linear-gradient(
     .hero {
         min-height: auto;
 
-        padding: 75px 22px 70px;
+        padding: 110px 22px 70px;
 
         display: flex;
         flex-direction: column;
@@ -952,11 +953,12 @@ linear-gradient(
     /* BRAND TITLE */
 
     .brand-title {
-        font-size: 52px;
+        font-size: 42px;
 
         line-height: 1.05;
 
         text-align: center;
+        white-space: normal
     }
 
 
@@ -981,23 +983,21 @@ linear-gradient(
     /* HERO IMAGE */
 
     .hero-image {
+        position: relative;
+        right: auto;
+        bottom: auto;
         width: 100%;
-
         margin-top: 45px;
-
         display: flex;
-
         justify-content: center;
     }
 
     .hero-image img {
         width: 100%;
-
         max-width: 340px;
-
         height: auto;
-
         object-fit: cover;
+        opacity: 0.85;
     }
 
 
@@ -1028,9 +1028,7 @@ linear-gradient(
     /* SCROLL INDICATOR */
 
     .scroll-indicator {
-        margin-top: 45px;
-
-        font-size: 12px;
+        display: none;
     }
 
 
