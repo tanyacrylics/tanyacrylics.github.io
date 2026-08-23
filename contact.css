@@ -381,25 +381,24 @@ nav a:hover {
     }
 
     .contact-links a {
-        padding: 20px 2px;
-
-        gap: 16px;
+        padding: 19px 2px;
+        gap: 15px;
     }
 .contact-icon {
-    width: 36px;
-    height: 36px;
+    width: 34px;
+    height: 34px;
 }
 
 .contact-icon svg {
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
 }
 
 .contact-info span {
     font-size: 25px;
 }
 .contact-info small {
-    font-size: 12px;
+    font-size: 11px;
 }
     
     .contact-links span {
@@ -409,6 +408,17 @@ nav a:hover {
     .contact-links small {
         font-size: 12px;
     }
+    .digital-note {
+    padding: 28px 5px 80px;
+}
+
+.digital-note span {
+    font-size: 25px;
+}
+
+.digital-note small {
+    font-size: 12px;
+}
 
     .whatsapp-float {
         width: 52px;
