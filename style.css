@@ -928,7 +928,7 @@ linear-gradient(
     .hero {
         min-height: auto;
 
-        padding: 130px 22px 70px;
+        padding: 105px 22px 70px;
 
         display: flex;
         flex-direction: column;
