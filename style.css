@@ -954,11 +954,11 @@ linear-gradient(
 
     .brand-title {
         font-size: 36px;
-
-        line-height: 1.05;
-
+        line-spacing: 1px;
+        line-height: 1.1;
         text-align: center;
-        white-space: normal
+        white-space: nowrap;
+        margin-bottom: 12px;
     }
 
 
