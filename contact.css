@@ -143,7 +143,12 @@ nav a:hover {
 }
 
 
-/* ================= CONTACT LINK ================= */
+/* ================= CONTACT LINKS ================= */
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+}
 
 .contact-links a {
     display: flex;
@@ -151,52 +156,35 @@ nav a:hover {
 
     gap: 22px;
 
-    padding: 24px 8px;
+    padding: 22px 8px;
 
     color: white;
     text-decoration: none;
 
-    border-bottom: 1px solid rgba(212, 175, 55, .18);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.16);
 
     transition:
-        color .3s ease,
-        padding-left .3s ease,
-        border-color .3s ease;
+        color 0.3s ease,
+        padding-left 0.3s ease,
+        border-color 0.3s ease;
 }
 
 .contact-links a:first-child {
-    border-top: 1px solid rgba(212, 175, 55, .18);
+    border-top: 1px solid rgba(212, 175, 55, 0.16);
 }
 
 .contact-links a:hover {
     color: #D4AF37;
-
-    padding-left: 16px;
-
-    border-color: rgba(212, 175, 55, .5);
-}
-.contact-links span {
-    font-family: 'Cormorant Garamond', serif;
-
-    font-size: 30px;
-
-    font-weight: 500;
+    padding-left: 14px;
+    border-color: rgba(212, 175, 55, 0.45);
 }
 
-.contact-links small {
-    color: #999;
 
-    font-size: 14px;
-
-    letter-spacing: .5px;
-
-    text-align: right;
-}
-/* ================= CONTACT ICON ================= */
+/* ================= ICONS ================= */
 
 .contact-icon {
-    width: 42px;
-    height: 42px;
+    width: 38px;
+    height: 38px;
 
     flex-shrink: 0;
 
@@ -208,19 +196,30 @@ nav a:hover {
 }
 
 .contact-icon svg {
-    width: 27px;
-    height: 27px;
+    width: 24px;
+    height: 24px;
 
     fill: currentColor;
-
-    stroke: currentColor;
-
-    stroke-width: 1.4;
-    transition: transform .3s ease;
 }
 
-.contact-links a:hover .contact-icon svg {
-    transform: scale(1.1);
+.contact-icon rect,
+.contact-icon circle {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.7;
+}
+
+.contact-icon circle:last-child {
+    fill: currentColor;
+    stroke: none;
+}
+
+.contact-links a:hover .contact-icon {
+    transform: scale(1.08);
+}
+
+.contact-icon {
+    transition: transform 0.3s ease;
 }
 
 
@@ -229,23 +228,64 @@ nav a:hover {
 .contact-info {
     display: flex;
     flex-direction: column;
-
     gap: 3px;
 }
 
 .contact-info span {
-    font-family: "Times", serif;
+    font-family: "Cormorant Garamond", serif;
 
-    font-size: 30px;
+    font-size: 29px;
 
     font-weight: 500;
 }
+
 .contact-info small {
     color: #999;
 
-    font-size: 14px;
+    font-family: "Poppins", sans-serif;
 
-    letter-spacing: .5px;
+    font-size: 13px;
+
+    letter-spacing: 0.3px;
+}
+
+
+/* ================= DIGITAL STUDIO ================= */
+
+.digital-note {
+    max-width: 850px;
+
+    margin: 25px auto 0;
+
+    padding: 32px 8px 100px;
+
+    text-align: center;
+
+    border-top: 1px solid rgba(212, 175, 55, 0.16);
+}
+
+.digital-note span {
+    display: block;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 28px;
+
+    color: #D4AF37;
+
+    font-weight: 500;
+
+    margin-bottom: 8px;
+}
+
+.digital-note small {
+    color: #999;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.7;
 }
 /* ================= WHATSAPP FLOAT ================= */
 
@@ -405,31 +445,4 @@ nav a:hover {
 nav a {
     font-size: 13px;
 }
-}
-.digital-note {
-    padding: 30px 8px;
-
-    border-top: 1px solid rgba(212, 175, 55, .18);
-
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-}
-
-.digital-note span {
-    font-family: "Cormorant Garamond", serif;
-
-    font-size: 28px;
-
-    color: #D4AF37;
-
-    font-weight: 500;
-}
-
-.digital-note small {
-    color: #999;
-
-    font-size: 14px;
-
-    line-height: 1.7;
 }
