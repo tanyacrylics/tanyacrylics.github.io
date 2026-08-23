@@ -955,7 +955,7 @@ linear-gradient(
     /* THE BRANDING HEADLINE */
     .hero-left h1.brand-title,
     .hero-left h1.brand-title .gold-a {
-        font-size: 22px !important;     /* Changes both the main text and the gold letter */
+        font-size: 36px !important;     /* Changes both the main text and the gold letter */
         letter-spacing: 1px !important;  
         line-height: 1.1 !important;
         white-space: nowrap !important;  /* Locks "TANYACRYLICS" securely onto 1 single line */
