@@ -343,8 +343,8 @@ nav a:hover {
 
     .contact-hero {
         min-height: auto;
-
         padding: 75px 22px 45px;
+        justify-content: flex-start;
     }
 
     .contact-tag {
