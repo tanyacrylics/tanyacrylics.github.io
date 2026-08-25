@@ -898,29 +898,48 @@ linear-gradient(
     /* HEADER */
 
     header {
-        padding: 15px 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px 16px 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 7px;
+        z-index: 1000;
     }
 
     .logo-area {
-        gap: 10px;
+       display: flex;
+        align-items: center;
+        gap: 9px;
     }
 
     .logo {
-        width: 36px;
-        height: 36px;
+        width: 34px;
+        height: 34px;
     }
 
     .logo-area h2 {
-        font-size: 24px;
+       font-size: 23px;
+        line-height: 1;
     }
 
     nav {
-        gap: 15px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0;
+        flex-wrap: nowrap;
+        white-space: nowrap;
     }
 
     nav a {
         font-size: 13px;
-        margin-left: 15px;
+        padding: 3px 2px;
+        white-space: nowrap;
     }
 
 
