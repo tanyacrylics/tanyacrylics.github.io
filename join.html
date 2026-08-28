@@ -75,15 +75,16 @@ Small batches • Personal Guidance • Live Online
 
         <p class="reserve-text">
 
-            Complete the form below and continue to the payment page.
+            Complete the form below to get the payment link.
 
         </p>
             <form id="bookingForm">
 
 <input
-type="text"
-placeholder="👤 Full Name"
-required>
+    id="name"
+    type="text"
+    placeholder="👤 Full Name"
+    required>
 
 <input
 id="phone"
@@ -99,11 +100,9 @@ placeholder="WhatsApp Number">
 </label>
 
 <textarea
-
-placeholder="Share them with us!"
-
-rows="4">
-
+    id="question"
+    placeholder="Share them with us!"
+    rows="4">
 </textarea>
 
 <button
@@ -118,73 +117,105 @@ Continue →
 
 </section>
 
-    
-<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.0/build/js/intlTelInput.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.0/build/js/intlTelInput.min.js"></script>   
+<script>
+document.addEventListener("DOMContentLoaded", function () {
 
-    <script>
+    /* ================= PHONE INPUT ================= */
 
-const reserveBtn = document.getElementById("reserveBtn");
-const reserve = document.getElementById("reserve");
+    const phoneInput = document.querySelector("#phone");
 
-reserveBtn.onclick = function () {
+    const iti = window.intlTelInput(phoneInput, {
+        initialCountry: "in",
+        separateDialCode: true,
+        preferredCountries: ["in", "us", "gb", "ca", "au"],
+        utilsScript:
+    "https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.0/build/js/utils.js"
+    });
 
-    reserve.classList.add("show");
 
-    setTimeout(function () {
+    /* ================= CONTINUE → WHATSAPP ================= */
 
-        reserve.scrollIntoView({
-            behavior: "smooth",
-            block: "start"
+    const bookingForm = document.querySelector("#bookingForm");
+
+    if (bookingForm) {
+
+        bookingForm.addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+            const name = document.querySelector("#name").value.trim();
+            const question = document.querySelector("#question").value.trim();
+
+            if (!name) {
+                alert("Please enter your name.");
+                return;
+            }
+
+            if (!phoneInput.value.trim()) {
+                alert("Please enter your WhatsApp number.");
+                return;
+            }
+
+
+            /* Get selected country */
+
+            const countryData = iti.getSelectedCountryData();
+
+            const country = countryData && countryData.name
+                ? countryData.name
+                : "Not specified";
+
+
+            /* Get complete international number */
+
+            let whatsappNumber = "";
+
+            try {
+                whatsappNumber = iti.getNumber();
+            } catch (error) {
+                whatsappNumber = phoneInput.value.trim();
+            }
+
+
+            /* ================= MESSAGE ================= */
+
+            let message =
+`Hi Tanya,
+
+I would like to join the next workshop.
+
+Name: ${name}
+Country: ${country}
+WhatsApp Number: ${whatsappNumber}`;
+
+            if (question) {
+                message += `
+
+Question / Comment:
+${question}`;
+            }
+
+            message += `
+
+Please send me the payment link.
+
+Thank you.`;
+
+
+            /* ================= OPEN WHATSAPP ================= */
+
+            const whatsappURL =
+                "https://wa.me/919810910208?text=" +
+                encodeURIComponent(message);
+
+            window.open(whatsappURL, "_blank");
+
         });
-
-    }, 100);
-
-};
-
-
-const phoneInput = document.querySelector("#phone");
-
-const iti = intlTelInput(phoneInput, {
-    initialCountry: "in",
-    countryOrder: ["in", "us", "gb", "ca", "au"],
-    separateDialCode: true
-});
-     
-const bookingForm = document.getElementById("bookingForm");
-const paymentSection = document.getElementById("paymentSection");
-const indiaPayment = document.getElementById("indiaPayment");
-const foreignPayment = document.getElementById("foreignPayment");
-
-bookingForm.addEventListener("submit", function (event) {
-
-    event.preventDefault();
-
-    const country = iti.getSelectedCountryData().iso2;
-
-    paymentSection.classList.add("show");
-
-    if (country === "in") {
-        indiaPayment.style.display = "block";
-        foreignPayment.style.display = "none";
-    } else {
-        indiaPayment.style.display = "none";
-        foreignPayment.style.display = "block";
     }
 
-    setTimeout(function () {
-
-        paymentSection.scrollIntoView({
-            behavior: "smooth",
-            block: "start"
-        });
-
-    }, 100);
-
 });
-
 </script>
-
-
 
     <section class="highlights">
 
