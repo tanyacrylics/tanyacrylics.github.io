@@ -117,20 +117,57 @@ Continue →
 
 </section>
 
- <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.0/build/js/intlTelInput.min.js"></script>   
+ <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.0/build/js/intlTelInput.min.js"></script>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
+
+
+    /* ================= RESERVE MY SEAT ================= */
+
+    const reserveBtn = document.getElementById("reserveBtn");
+    const reserve = document.getElementById("reserve");
+
+    if (reserveBtn && reserve) {
+
+        reserveBtn.addEventListener("click", function () {
+
+            reserve.classList.add("show");
+
+            setTimeout(function () {
+
+                reserve.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+
+            }, 100);
+
+        });
+
+    }
+
 
     /* ================= PHONE INPUT ================= */
 
     const phoneInput = document.querySelector("#phone");
 
     const iti = window.intlTelInput(phoneInput, {
+
         initialCountry: "in",
+
+        countryOrder: [
+            "in",
+            "us",
+            "gb",
+            "ca",
+            "au"
+        ],
+
         separateDialCode: true,
-        preferredCountries: ["in", "us", "gb", "ca", "au"],
+
         utilsScript:
-    "https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.0/build/js/utils.js"
+            "https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.0/build/js/utils.js"
+
     });
 
 
@@ -144,27 +181,41 @@ document.addEventListener("DOMContentLoaded", function () {
 
             event.preventDefault();
 
-            const name = document.querySelector("#name").value.trim();
-            const question = document.querySelector("#question").value.trim();
+
+            const name =
+                document.querySelector("#name").value.trim();
+
+            const question =
+                document.querySelector("#question").value.trim();
+
 
             if (!name) {
+
                 alert("Please enter your name.");
+
                 return;
+
             }
 
+
             if (!phoneInput.value.trim()) {
+
                 alert("Please enter your WhatsApp number.");
+
                 return;
+
             }
 
 
             /* Get selected country */
 
-            const countryData = iti.getSelectedCountryData();
+            const countryData =
+                iti.getSelectedCountryData();
 
-            const country = countryData && countryData.name
-                ? countryData.name
-                : "Not specified";
+            const country =
+                countryData && countryData.name
+                    ? countryData.name
+                    : "Not specified";
 
 
             /* Get complete international number */
@@ -172,13 +223,18 @@ document.addEventListener("DOMContentLoaded", function () {
             let whatsappNumber = "";
 
             try {
+
                 whatsappNumber = iti.getNumber();
+
             } catch (error) {
-                whatsappNumber = phoneInput.value.trim();
+
+                whatsappNumber =
+                    phoneInput.value.trim();
+
             }
 
 
-            /* ================= MESSAGE ================= */
+            /* ================= WHATSAPP MESSAGE ================= */
 
             let message =
 `Hi Tanya,
@@ -189,12 +245,16 @@ Name: ${name}
 Country: ${country}
 WhatsApp Number: ${whatsappNumber}`;
 
+
             if (question) {
+
                 message += `
 
 Question / Comment:
 ${question}`;
+
             }
+
 
             message += `
 
@@ -209,9 +269,14 @@ Thank you.`;
                 "https://wa.me/919810910208?text=" +
                 encodeURIComponent(message);
 
-            window.open(whatsappURL, "_blank");
+
+            window.open(
+                whatsappURL,
+                "_blank"
+            );
 
         });
+
     }
 
 });
